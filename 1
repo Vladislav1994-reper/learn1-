@@ -1,0 +1,111 @@
+package com.reper.lessons.firstLesson;
+
+public class FirstLesson {
+
+    public static void main(String[] args) {
+        //Премитивные типы -- в переменной лежит значение.
+        //int - целое число
+        int a = 1;
+        //boolean -- логическая значение
+        boolean value = false;
+        //char - символ
+        char charValue = 's';
+        //double -- дробное значение
+        double doubleValue = 1.5;
+        //void -- ничего
+
+        //ссылочные типы -- в переменной лежит ссылка на объект.
+        //string -- строка
+        String stringValue = "reper vladik";
+
+        // ОБъертки
+        Integer intValue = 1;
+        Boolean booleanValue = true;
+        Character characterValue = 'd';
+        Double doubleValue2 = 1.5;
+
+       Cat cat = new Cat(1,15, "Рыжий", 3);
+       cat.sayMay();
+       cat.run();
+       cat.sayColor();
+       Cat cat2 = new Cat(5,5, "Черный с пятнышками", 4);
+        cat2.sayMay();
+        cat2.run();
+        cat2.sayColor();
+
+    }
+
+    public static int test(int value1, int value2) {
+        return value1 + value2;
+    }
+
+    public static void test2(int value1, int value2) {
+        //ветвление
+        if (value1 < value2) {
+            System.out.println("true");
+        } else {
+            System.out.println("false");
+        }
+    }
+
+    public static void test3(int value1, int value2) {
+        //циклы
+        while (value1 > value2) {
+            value1 = value1 - value2;
+        }
+
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println("iteration " + i);
+        }
+    }
+
+
+
+
+}
+package com.reper.lessons.firstLesson;
+
+public class Cat {
+
+    public int old;
+    public int weight;
+    public String color;
+    public int amountLegs;
+
+    public Cat(int old, int weight, String color, int amountLegs) {
+        this.old = old;
+        this.weight = weight;
+        this.color = color;
+        this.amountLegs = amountLegs;
+    }
+
+    public void sayMay() {
+        System.out.println("May!");
+    }
+
+    public void run() {
+        if (amountLegs == 4) {
+            System.out.println("Run");
+        } else {
+            System.out.println("May:(");
+        }
+    }
+
+    public void sayColor() {
+        System.out.println(color);
+    }
+
+}
+ge com.reper.lessons.firstLesson;
+
+public class Test {
+
+    public static void main(String[] args) {
+        System.out.println("Введите значение");
+        //логика введдения с консоли значения
+        //логическая операция
+        //ответ
+    }
+
+}
